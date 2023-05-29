@@ -1,0 +1,13 @@
+yaml/train_yaml/default_params.yaml
+There are 49000 samples in train split, on each rank. 
+There are 1000 samples in val split, on each rank. 
+There are 191 train_dataloaders on each rank. 
+There are 4 val_dataloaders on each rank. 
+
+Number of trainable params in the model: 5506852
+
+Loss, optimizer and schedulers ready.
+
+Training timm model from imagenet pretrained
+Starting training !
+Starting one epoch... 

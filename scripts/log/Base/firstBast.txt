@@ -1,0 +1,163 @@
+yaml/train_yaml/default_params.yaml
+There are 49000 samples in train split, on each rank. 
+There are 1000 samples in val split, on each rank. 
+There are 191 train_dataloaders on each rank. 
+There are 4 val_dataloaders on each rank. 
+
+Number of trainable params in the model: 5506852
+
+Loss, optimizer and schedulers ready.
+
+Training timm model from imagenet pretrained
+Found checkpoint at /storage/models/Base/PatchDropout_CIFAR100_vit_tiny_patch16_224_in21k/checkpoint_CIFAR100_ImagenetSupervised.pth
+=> loaded 'model' from checkpoint '/storage/models/Base/PatchDropout_CIFAR100_vit_tiny_patch16_224_in21k/checkpoint_CIFAR100_ImagenetSupervised.pth' with msg <All keys matched successfully>
+=> loaded 'optimizer' from checkpoint: '/storage/models/Base/PatchDropout_CIFAR100_vit_tiny_patch16_224_in21k/checkpoint_CIFAR100_ImagenetSupervised.pth'
+Starting training !
+Starting one epoch... 
+Epoch: [12/100]  [  0/191]  eta: 2:35:38  loss: 3.199954 (3.199954)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 48.891083  data: 48.422424  max mem: 254
+Epoch: [12/100]  [ 20/191]  eta: 0:07:27  loss: 3.224931 (3.192925)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.301685  data: 0.000208  max mem: 275
+Epoch: [12/100]  [ 40/191]  eta: 0:03:44  loss: 3.172396 (3.188652)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.307368  data: 0.000233  max mem: 275
+Epoch: [12/100]  [ 60/191]  eta: 0:02:23  loss: 3.216629 (3.193698)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.296774  data: 0.000221  max mem: 275
+Epoch: [12/100]  [ 80/191]  eta: 0:01:40  loss: 3.168924 (3.190737)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.312428  data: 0.000264  max mem: 275
+Epoch: [12/100]  [100/191]  eta: 0:01:11  loss: 3.168859 (3.192552)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.313182  data: 0.000306  max mem: 275
+Epoch: [12/100]  [120/191]  eta: 0:00:50  loss: 3.167418 (3.190529)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.305110  data: 0.000241  max mem: 275
+Epoch: [12/100]  [140/191]  eta: 0:00:33  loss: 3.203475 (3.191385)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.296479  data: 0.000237  max mem: 275
+Epoch: [12/100]  [160/191]  eta: 0:00:18  loss: 3.172446 (3.192279)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.301001  data: 0.000256  max mem: 275
+Epoch: [12/100]  [180/191]  eta: 0:00:06  loss: 3.176422 (3.190408)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.296172  data: 0.000425  max mem: 275
+Epoch: [12/100]  [190/191]  eta: 0:00:00  loss: 3.192918 (3.191341)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.289036  data: 0.000282  max mem: 275
+Epoch: [12/100] Total time: 0:02:36 (0.819313 s / it)
+Averaged stats: loss: 3.192918 (3.191341)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)
+Val:  [0/4]  eta: 0:03:11    time: 47.888611  data: 47.846836  max mem: 275
+Val:  [3/4]  eta: 0:00:11    time: 11.989805  data: 11.961772  max mem: 275
+Val: Total time: 0:01:08 (17.001780 s / it)
+Gathering image level - Number of validation images 1000
+Val Loss at epoch 13 of the network on the validation set: 2.614366292953491
+Top1 accuracy at epoch 13 of the network on the validation set: 0.345
+Top5 accuracy at epoch 13 of the network on the validation set: 0.656
+Starting one epoch... 
+Epoch: [13/100]  [  0/191]  eta: 2:27:32  loss: 3.237352 (3.237352)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 46.348740  data: 45.990604  max mem: 375
+Epoch: [13/100]  [ 20/191]  eta: 0:07:05  loss: 3.176242 (3.190427)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.295237  data: 0.000195  max mem: 375
+Epoch: [13/100]  [ 40/191]  eta: 0:03:34  loss: 3.229789 (3.203795)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.305152  data: 0.000292  max mem: 375
+Epoch: [13/100]  [ 60/191]  eta: 0:02:17  loss: 3.147137 (3.186792)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.292019  data: 0.000230  max mem: 375
+Epoch: [13/100]  [ 80/191]  eta: 0:01:36  loss: 3.192158 (3.185194)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.301823  data: 0.000235  max mem: 375
+Epoch: [13/100]  [100/191]  eta: 0:01:08  loss: 3.171311 (3.180521)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.301441  data: 0.000231  max mem: 375
+Epoch: [13/100]  [120/191]  eta: 0:00:48  loss: 3.132310 (3.173983)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.321668  data: 0.000231  max mem: 375
+Epoch: [13/100]  [140/191]  eta: 0:00:32  loss: 3.172397 (3.171172)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.304317  data: 0.000241  max mem: 375
+Epoch: [13/100]  [160/191]  eta: 0:00:18  loss: 3.156999 (3.170223)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.298353  data: 0.000310  max mem: 375
+Epoch: [13/100]  [180/191]  eta: 0:00:06  loss: 3.104705 (3.164045)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.302047  data: 0.000220  max mem: 375
+Epoch: [13/100]  [190/191]  eta: 0:00:00  loss: 3.113274 (3.162713)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.302490  data: 0.000166  max mem: 375
+Epoch: [13/100] Total time: 0:02:33 (0.805914 s / it)
+Averaged stats: loss: 3.113274 (3.162713)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)
+Val:  [0/4]  eta: 0:03:17    time: 49.462536  data: 49.419827  max mem: 375
+Val:  [3/4]  eta: 0:00:12    time: 12.378164  data: 12.355012  max mem: 375
+Val: Total time: 0:01:09 (17.390044 s / it)
+Gathering image level - Number of validation images 1000
+Val Loss at epoch 14 of the network on the validation set: 2.597440719604492
+Top1 accuracy at epoch 14 of the network on the validation set: 0.347
+Top5 accuracy at epoch 14 of the network on the validation set: 0.645
+Starting one epoch... 
+Epoch: [14/100]  [  0/191]  eta: 2:33:51  loss: 3.035823 (3.035823)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 48.334419  data: 47.936829  max mem: 375
+Epoch: [14/100]  [ 20/191]  eta: 0:07:23  loss: 3.130645 (3.131169)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.304329  data: 0.000214  max mem: 375
+Epoch: [14/100]  [ 40/191]  eta: 0:03:42  loss: 3.142060 (3.132929)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.303903  data: 0.000244  max mem: 375
+Epoch: [14/100]  [ 60/191]  eta: 0:02:22  loss: 3.121283 (3.135104)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.303724  data: 0.000253  max mem: 375
+Epoch: [14/100]  [ 80/191]  eta: 0:01:39  loss: 3.173233 (3.142164)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.304584  data: 0.000237  max mem: 375
+Epoch: [14/100]  [100/191]  eta: 0:01:10  loss: 3.135829 (3.140164)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.301107  data: 0.000328  max mem: 375
+Epoch: [14/100]  [120/191]  eta: 0:00:49  loss: 3.084797 (3.133513)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.302198  data: 0.000246  max mem: 375
+Epoch: [14/100]  [140/191]  eta: 0:00:32  loss: 3.107019 (3.131996)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.287719  data: 0.000217  max mem: 375
+Epoch: [14/100]  [160/191]  eta: 0:00:18  loss: 3.124847 (3.130111)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.297204  data: 0.000226  max mem: 375
+Epoch: [14/100]  [180/191]  eta: 0:00:06  loss: 3.119718 (3.127865)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.290748  data: 0.000287  max mem: 375
+Epoch: [14/100]  [190/191]  eta: 0:00:00  loss: 3.110279 (3.127609)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.287534  data: 0.000225  max mem: 375
+Epoch: [14/100] Total time: 0:02:35 (0.812783 s / it)
+Averaged stats: loss: 3.110279 (3.127609)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)
+Val:  [0/4]  eta: 0:03:11    time: 47.876053  data: 47.834770  max mem: 375
+Val:  [3/4]  eta: 0:00:11    time: 11.984135  data: 11.958780  max mem: 375
+Val: Total time: 0:01:07 (16.999308 s / it)
+Gathering image level - Number of validation images 1000
+Val Loss at epoch 15 of the network on the validation set: 2.499444007873535
+Top1 accuracy at epoch 15 of the network on the validation set: 0.36
+Top5 accuracy at epoch 15 of the network on the validation set: 0.695
+Starting one epoch... 
+Epoch: [15/100]  [  0/191]  eta: 2:49:26  loss: 3.108761 (3.108761)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 53.228317  data: 52.847294  max mem: 375
+Epoch: [15/100]  [ 20/191]  eta: 0:08:04  loss: 3.101138 (3.103597)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.312984  data: 0.000215  max mem: 375
+Epoch: [15/100]  [ 40/191]  eta: 0:04:01  loss: 3.101763 (3.100682)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.306022  data: 0.000686  max mem: 375
+Epoch: [15/100]  [ 60/191]  eta: 0:02:34  loss: 3.085449 (3.099765)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.305696  data: 0.000277  max mem: 375
+Epoch: [15/100]  [ 80/191]  eta: 0:01:46  loss: 3.094081 (3.097172)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.301979  data: 0.000540  max mem: 375
+Epoch: [15/100]  [100/191]  eta: 0:01:15  loss: 3.073221 (3.092969)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.288972  data: 0.000267  max mem: 375
+Epoch: [15/100]  [120/191]  eta: 0:00:52  loss: 3.127994 (3.096890)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.299535  data: 0.000279  max mem: 375
+Epoch: [15/100]  [140/191]  eta: 0:00:34  loss: 3.048008 (3.091703)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.322718  data: 0.000339  max mem: 375
+Epoch: [15/100]  [160/191]  eta: 0:00:19  loss: 3.061123 (3.088952)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.311140  data: 0.000642  max mem: 375
+Epoch: [15/100]  [180/191]  eta: 0:00:06  loss: 3.061368 (3.087082)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.378220  data: 0.000336  max mem: 375
+Epoch: [15/100]  [190/191]  eta: 0:00:00  loss: 3.060677 (3.087471)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.356859  data: 0.000219  max mem: 375
+Epoch: [15/100] Total time: 0:02:43 (0.855955 s / it)
+Averaged stats: loss: 3.060677 (3.087471)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)
+Val:  [0/4]  eta: 0:03:46    time: 56.593513  data: 56.548073  max mem: 375
+Val:  [3/4]  eta: 0:00:14    time: 14.161332  data: 14.137080  max mem: 375
+Val: Total time: 0:01:16 (19.175569 s / it)
+Gathering image level - Number of validation images 1000
+Val Loss at epoch 16 of the network on the validation set: 2.4924936294555664
+Top1 accuracy at epoch 16 of the network on the validation set: 0.368
+Top5 accuracy at epoch 16 of the network on the validation set: 0.682
+Starting one epoch... 
+Epoch: [16/100]  [  0/191]  eta: 2:31:59  loss: 3.107641 (3.107641)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 47.746956  data: 47.343418  max mem: 375
+Epoch: [16/100]  [ 20/191]  eta: 0:07:16  loss: 3.060929 (3.068760)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.294187  data: 0.000204  max mem: 375
+Epoch: [16/100]  [ 40/191]  eta: 0:03:38  loss: 3.069978 (3.072821)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.289664  data: 0.000220  max mem: 375
+Epoch: [16/100]  [ 60/191]  eta: 0:02:19  loss: 3.064238 (3.068061)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.288014  data: 0.000287  max mem: 375
+Epoch: [16/100]  [ 80/191]  eta: 0:01:37  loss: 3.069509 (3.067269)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.299740  data: 0.000257  max mem: 375
+Epoch: [16/100]  [100/191]  eta: 0:01:09  loss: 3.091653 (3.073933)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.293523  data: 0.000229  max mem: 375
+Epoch: [16/100]  [120/191]  eta: 0:00:48  loss: 3.077467 (3.074705)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.300866  data: 0.000258  max mem: 375
+Epoch: [16/100]  [140/191]  eta: 0:00:32  loss: 3.072156 (3.075082)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.300391  data: 0.000307  max mem: 375
+Epoch: [16/100]  [160/191]  eta: 0:00:18  loss: 3.050133 (3.071861)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.315592  data: 0.000282  max mem: 375
+Epoch: [16/100]  [180/191]  eta: 0:00:06  loss: 3.040147 (3.069869)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.332021  data: 0.000328  max mem: 375
+Epoch: [16/100]  [190/191]  eta: 0:00:00  loss: 3.019557 (3.068909)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.318159  data: 0.000241  max mem: 375
+Epoch: [16/100] Total time: 0:02:35 (0.812506 s / it)
+Averaged stats: loss: 3.019557 (3.068909)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)
+Val:  [0/4]  eta: 0:03:11    time: 47.794640  data: 47.752869  max mem: 375
+Val:  [3/4]  eta: 0:00:11    time: 11.961799  data: 11.938288  max mem: 375
+Val: Total time: 0:01:07 (16.978594 s / it)
+Gathering image level - Number of validation images 1000
+Val Loss at epoch 17 of the network on the validation set: 2.4564871788024902
+Top1 accuracy at epoch 17 of the network on the validation set: 0.379
+Top5 accuracy at epoch 17 of the network on the validation set: 0.698
+Starting one epoch... 
+Epoch: [17/100]  [  0/191]  eta: 2:32:15  loss: 3.071985 (3.071985)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 47.830387  data: 47.420021  max mem: 375
+Epoch: [17/100]  [ 20/191]  eta: 0:07:16  loss: 3.037498 (3.038874)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.290384  data: 0.000197  max mem: 375
+Epoch: [17/100]  [ 40/191]  eta: 0:03:39  loss: 3.070335 (3.043356)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.301967  data: 0.000543  max mem: 375
+Epoch: [17/100]  [ 60/191]  eta: 0:02:21  loss: 3.067274 (3.051041)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.311042  data: 0.000371  max mem: 375
+Epoch: [17/100]  [ 80/191]  eta: 0:01:38  loss: 3.052785 (3.053399)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.305179  data: 0.000224  max mem: 375
+Epoch: [17/100]  [100/191]  eta: 0:01:10  loss: 3.001436 (3.043590)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.297991  data: 0.000851  max mem: 375
+Epoch: [17/100]  [120/191]  eta: 0:00:49  loss: 2.995664 (3.040382)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.290428  data: 0.000246  max mem: 375
+Epoch: [17/100]  [140/191]  eta: 0:00:32  loss: 3.067455 (3.043050)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.291712  data: 0.000289  max mem: 375
+Epoch: [17/100]  [160/191]  eta: 0:00:18  loss: 3.040756 (3.042053)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.293914  data: 0.000215  max mem: 375
+Epoch: [17/100]  [180/191]  eta: 0:00:06  loss: 3.076346 (3.044222)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.303208  data: 0.000267  max mem: 375
+Epoch: [17/100]  [190/191]  eta: 0:00:00  loss: 3.064842 (3.043457)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.298945  data: 0.000193  max mem: 375
+Epoch: [17/100] Total time: 0:02:34 (0.809544 s / it)
+Averaged stats: loss: 3.064842 (3.043457)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)
+Val:  [0/4]  eta: 0:03:15    time: 48.814922  data: 48.771236  max mem: 375
+Val:  [3/4]  eta: 0:00:12    time: 12.215675  data: 12.192863  max mem: 375
+Val: Total time: 0:01:08 (17.232630 s / it)
+Gathering image level - Number of validation images 1000
+Val Loss at epoch 18 of the network on the validation set: 2.388559103012085
+Top1 accuracy at epoch 18 of the network on the validation set: 0.386
+Top5 accuracy at epoch 18 of the network on the validation set: 0.711
+Starting one epoch... 
+Epoch: [18/100]  [  0/191]  eta: 2:45:08  loss: 2.971126 (2.971126)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 51.879562  data: 51.468296  max mem: 375
+Epoch: [18/100]  [ 20/191]  eta: 0:07:54  loss: 3.020206 (3.035480)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.320734  data: 0.000290  max mem: 375
+Epoch: [18/100]  [ 40/191]  eta: 0:03:56  loss: 3.040218 (3.037231)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.301221  data: 0.000482  max mem: 375
+Epoch: [18/100]  [ 60/191]  eta: 0:02:31  loss: 3.001041 (3.027014)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.305680  data: 0.000218  max mem: 375
+Epoch: [18/100]  [ 80/191]  eta: 0:01:47  loss: 2.977481 (3.016553)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.398442  data: 0.000253  max mem: 375
+Epoch: [18/100]  [100/191]  eta: 0:01:24  loss: 3.013826 (3.012735)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.744530  data: 0.000271  max mem: 375
+Epoch: [18/100]  [120/191]  eta: 0:01:03  loss: 2.973069 (3.007760)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.780331  data: 0.000281  max mem: 375
+Epoch: [18/100]  [140/191]  eta: 0:00:45  loss: 3.009293 (3.011250)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.798515  data: 0.000339  max mem: 375
+Epoch: [18/100]  [160/191]  eta: 0:00:27  loss: 3.004858 (3.010805)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.777044  data: 0.000435  max mem: 375
+Epoch: [18/100]  [180/191]  eta: 0:00:09  loss: 3.020819 (3.013163)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.628501  data: 0.000715  max mem: 375
+Epoch: [18/100]  [190/191]  eta: 0:00:00  loss: 3.037561 (3.015293)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)  time: 0.387664  data: 0.000469  max mem: 375
+Epoch: [18/100] Total time: 0:03:25 (1.078443 s / it)
+Averaged stats: loss: 3.037561 (3.015293)  lr: 0.000300 (0.000300)  wd: 0.000100 (0.000100)
+Val:  [0/4]  eta: 0:03:19    time: 49.800365  data: 49.755508  max mem: 375
+Val:  [3/4]  eta: 0:00:12    time: 12.463057  data: 12.438956  max mem: 375
+Val: Total time: 0:01:09 (17.474511 s / it)
+Gathering image level - Number of validation images 1000
+Val Loss at epoch 19 of the network on the validation set: 2.3707923889160156
+Top1 accuracy at epoch 19 of the network on the validation set: 0.396
+Top5 accuracy at epoch 19 of the network on the validation set: 0.717
+Starting one epoch... 
